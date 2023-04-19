@@ -1,0 +1,29 @@
+
+
+*{
+    margin: 0;
+    padding: 00;
+}
+.parent{
+    .menu{
+        position: fixed;
+        top: 0;
+        // margin-bottom: 20px;
+        background-color: aquamarine;
+        display: flex;
+        height: 100px;
+        width: 100%;
+        .item{
+            margin: 20px;
+            &:hover{
+                cursor: pointer;
+                background-color: red;
+            }
+        }
+    }
+    .text{
+        margin: 0 10px;
+        margin-top: 150px;
+    }
+
+}

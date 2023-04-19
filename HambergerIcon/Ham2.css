@@ -1,0 +1,35 @@
+.pa-ham{
+    margin: 100px;
+}
+.pa-ham:hover{
+    cursor: pointer;
+}
+.ham{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin-top: 7px;
+    animation-fill-mode: both;
+    transition: 0.4s;
+}
+
+#ham1.active{
+    transform: rotate(-45deg) translateY(16px);
+    transition: 0.4s;
+
+}
+
+#ham3.active{
+    transition: 0.4s;
+
+}
+#ham2.active{
+    transform: rotate(45deg) translateY(-16px);
+    transition: 0.4s;
+
+}
+
+
+
+
+

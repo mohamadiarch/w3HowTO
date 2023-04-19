@@ -1,0 +1,41 @@
+.parent {
+  display: flex;
+  background-color: aqua;
+  height: 100px;
+}
+.parent .item {
+  background-color: green;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+}
+.parent .item:nth-child(-n+2) {
+  background-color: gold;
+}
+.parent .item:nth-child(3) {
+  margin-right: auto;
+}
+.parent .item:nth-child(2) {
+  margin-right: auto;
+}
+.parent .item:nth-last-child(-n+2) {
+  background-color: gold;
+}
+
+.parent-grid {
+  display: grid;
+  grid-template-columns: 100px 100px auto 100px 100px;
+  background-color: greenyellow;
+  height: 100px;
+  margin-top: 100px;
+}
+.parent-grid .item {
+  background-color: magenta;
+  margin: 2px;
+}
+.parent-grid .item:nth-child(3) {
+  margin: auto;
+  width: 100px;
+  height: 100%;
+}/*# sourceMappingURL=center.css.map */

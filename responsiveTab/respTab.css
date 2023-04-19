@@ -1,0 +1,63 @@
+
+
+.resptab{
+    background-color: black;
+    color: wheat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.item{
+    margin-right: 10px;
+    height: 50px;
+    line-height: 50px;
+    width: 70px;
+    text-align: center;
+    transition: all 0.2s;
+}
+.item:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+.hamb{
+    margin-right: 100px;
+    margin-top: 15px;
+}
+.hamb:hover{
+    cursor: pointer;
+    height: max-content;
+    /* line-height: 50px; */
+}
+.hamline{
+    width: 30px;
+    height: 4px;
+    background: green;
+    margin-bottom: 5px;
+
+
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hamline{
+        display:block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hamline{
+        display:none;
+    }
+}
+
+
+

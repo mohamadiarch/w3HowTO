@@ -1,0 +1,52 @@
+
+
+
+
+
+.tabs , .section{
+    border: 1px solid black;
+    /* padding: 2px; */
+}
+
+.tabs{
+    background-color: antiquewhite;
+
+}
+ul{
+    height: 60px;
+    margin: 0px;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    width: 100px;
+    background-color: antiquewhite;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0px;
+    transition: all 0.4s;
+}
+li:hover{
+    background-color: rgb(158, 155, 150);
+    cursor: pointer;
+}
+
+
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.text{
+    animation: fadeEffect 1s;
+    display: none;
+    transition: all 1s;
+}
+
+.text.active{
+    display: block;
+    opacity: 01;
+
+}

@@ -1,0 +1,14 @@
+.parent .menu {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: magenta;
+}
+.parent .menu .item {
+  width: 100px;
+  margin: 5px;
+  background-color: goldenrod;
+}
+.parent .text {
+  margin: 5px;
+}/*# sourceMappingURL=SlideDownMenu.css.map */

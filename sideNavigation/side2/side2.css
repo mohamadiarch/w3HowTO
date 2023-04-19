@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  transition: all 2s;
+}
+.parent .side {
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  width: 100%;
+  height: 100vh;
+  transition: all 2s;
+}
+.parent .side .close {
+  color: aqua;
+  direction: rtl;
+}
+.parent .side .close:hover {
+  cursor: pointer;
+}
+.parent .side .item {
+  padding-left: 2rem;
+}
+
+.active {
+  background-color: brown !important;
+  transition: all 2s;
+  width: 0 !important;
+}
+
+.parent-active {
+  transition: all 2s;
+  grid-template-columns: 0% 100%;
+}
+
+.main {
+  background-color: aqua;
+  transition: all 2s;
+}
+.main .start {
+  background-color: blueviolet;
+  padding: 20px;
+  margin: 20px;
+  display: block;
+}
+.main .start:hover {
+  cursor: pointer;
+  color: azure;
+  transform: translateY(-2px);
+}/*# sourceMappingURL=side2.css.map */

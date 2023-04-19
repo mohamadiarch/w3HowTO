@@ -1,0 +1,39 @@
+
+
+.ifa{
+    font-size: 50px !important;
+    width: 80px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+    
+}
+
+
+.ifa:hover{
+    background-color: aquamarine;
+}
+
+.ifa::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f095";
+    display: inline-block;
+}
+.ifa:hover::after{
+    transform: rotate(10deg);
+}
+
+.icon-bar{
+    background-color: black;
+    /* display: inline-flex;
+    flex-direction: column; */
+
+}
+.active > .ifa{
+    background-color: green;
+}
+
+.active > .ifa:hover{
+    background-color: rgb(4, 95, 4);
+}

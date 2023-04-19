@@ -1,0 +1,18 @@
+
+
+.parent{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    background-color: aquamarine;
+    overflow: auto;
+    .button{
+        width: 200px;
+        height: 60000px;
+        background-color: gold;
+        margin: 5px;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+}

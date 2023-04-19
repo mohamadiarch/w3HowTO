@@ -1,0 +1,74 @@
+
+
+
+
+.pa-ham{
+    margin: 100px;
+}
+.pa-ham:hover{
+    cursor: pointer;
+}
+.ham{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin-top: 7px;
+    animation-fill-mode: both;
+    transition: 0.4s;
+}
+
+#ham2{
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#ham1{
+    animation-name: rotateRev;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#ham1.active{
+    animation-name: rotate;
+    animation-duration: 1s;
+    transition: 0.4s;
+
+}
+
+#ham3.active{
+    animation-name: rotateR;
+    animation-duration: 1s;
+}
+#ham2.active{
+    animation-name: fade;
+    animation-duration: 1s;
+    transition: 0.4s;
+
+}
+
+
+/* The animation code */
+@keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+  @keyframes fadeOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+/* The animation code */
+@keyframes rotate {
+    from {transform: rotate(0deg) translateY(0px) }
+    to {transform: rotate(-45deg) translateY(16px);}
+  }
+  @keyframes rotateR {
+    from {transform: rotate(0deg)  translateY(0px);}
+    to {transform: rotate(45deg) translateY(-16px);}
+  }
+  
+
+  @keyframes rotateRev {
+    from {transform: rotate(-45deg) translateY(16px);}
+    to {transform: rotate(0deg) translateY(0px) }
+  }

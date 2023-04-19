@@ -1,0 +1,18 @@
+
+
+.parent{
+    .menu{
+        display: flex;
+        height: 100px;
+        width: 100%;
+        background-color: magenta;
+        .item{
+            width: 100px;
+            margin: 5px;
+            background-color: goldenrod;
+        }
+    }
+    .text{
+        margin: 5px;
+    }
+}
