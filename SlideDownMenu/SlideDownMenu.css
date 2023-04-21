@@ -1,8 +1,15 @@
+.parent {
+  height: 300px;
+  overflow: auto;
+}
 .parent .menu {
   display: flex;
   height: 100px;
   width: 100%;
   background-color: magenta;
+  position: fixed;
+  top: -100px;
+  transition: all 0.5s;
 }
 .parent .menu .item {
   width: 100px;
@@ -11,4 +18,8 @@
 }
 .parent .text {
   margin: 5px;
+}
+
+.show {
+  top: 0 !important;
 }/*# sourceMappingURL=SlideDownMenu.css.map */

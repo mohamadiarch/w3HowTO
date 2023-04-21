@@ -1,11 +1,16 @@
 
 
 .parent{
+    height: 300px;
+    overflow: auto;
     .menu{
         display: flex;
         height: 100px;
         width: 100%;
         background-color: magenta;
+        position: fixed;
+        top: -100px;
+        transition: all 0.5s;
         .item{
             width: 100px;
             margin: 5px;
@@ -15,4 +20,8 @@
     .text{
         margin: 5px;
     }
+}
+
+.show{
+    top: 0 !important;
 }
